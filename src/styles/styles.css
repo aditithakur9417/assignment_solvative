@@ -1,0 +1,139 @@
+.app {
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.search-box {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.table-container{
+  display:flex;
+  justify-content:center;
+  margin:50px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid rgb(222, 226, 230);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 700;
+}
+
+td {
+  background-color: #fff;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  margin-top: 50px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.fetch-limit-box, .items-per-page-box {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.fetch-limit-box label, .items-per-page-box label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.fetch-limit-input, .items-per-page-input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fetch-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 420px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.search-box{
+  display: block;
+  margin:0 !important;
+  padding: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-box input {
+  background-color:transparent
+
+}
+}
+
